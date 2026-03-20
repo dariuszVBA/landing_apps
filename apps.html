@@ -448,49 +448,159 @@
 
 
 <!-- ============================================================
-     VIDEO SECTION
+     ANIMACJE — jak to działa
      ============================================================ -->
-<section class="section section--gray" id="videos">
+<section class="section section--gray" id="how-it-works">
   <div class="section__header reveal">
-    <span class="eyebrow">Zobacz w akcji</span>
-    <h2>Obejrzyj, zanim pobierzesz</h2>
-    <p>Krótkie filmy pokazujące, jak działa każde narzędzie. Instalacja i pierwsze kroki w mniej niż 5 minut.</p>
+    <span class="eyebrow">Jak to działa?</span>
+    <h2>Zobacz w akcji — bez instalacji</h2>
+    <p>Trzy animacje pokazujące, jak każde narzędzie oszczędza Twój czas każdego dnia.</p>
   </div>
 
-  <div class="video-grid">
+  <div class="anim-showcase">
 
-    <a href="#" class="video-card reveal" data-yt="dQw4w9WgXcQ">
-      <div class="video-card__thumb">
-        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="TimeCamp AI Agent — jak działa" loading="lazy">
-        <div class="video-card__play"><i class="fa-solid fa-play"></i></div>
+    <!-- ANIMACJA 1: AI Agent — auto-fill timesheet -->
+    <div class="anim-card reveal">
+      <div class="anim-card__label">
+        <i class="fa-solid fa-robot"></i> TimeTracker AI Agent
       </div>
-      <div class="video-card__body">
-        <div class="video-card__label">AI Agent · 3 min</div>
-        <div class="video-card__title">Jak AI Agent wypełnia timesheet za Ciebie</div>
+      <div class="anim-card__screen">
+        <!-- Symulacja okna aplikacji -->
+        <div class="mock-window">
+          <div class="mock-window__bar">
+            <span class="mock-dot mock-dot--red"></span>
+            <span class="mock-dot mock-dot--yellow"></span>
+            <span class="mock-dot mock-dot--green"></span>
+            <span class="mock-window__title">TimeCamp AI Agent</span>
+          </div>
+          <div class="mock-window__body">
+            <div class="mock-ai-header">
+              <div class="mock-ai-avatar"><i class="fa-solid fa-robot"></i></div>
+              <div class="mock-ai-status">AI analizuje Twoją pracę<span class="mock-dots-anim">...</span></div>
+            </div>
+            <div class="mock-timesheet">
+              <div class="mock-ts-row mock-ts-row--anim1">
+                <span class="mock-ts-time">09:00–10:30</span>
+                <span class="mock-ts-task">📧 Odpowiedzi na maile</span>
+                <span class="mock-ts-dur">1h 30m</span>
+              </div>
+              <div class="mock-ts-row mock-ts-row--anim2">
+                <span class="mock-ts-time">10:30–12:00</span>
+                <span class="mock-ts-task">💻 Projekt Alpha — development</span>
+                <span class="mock-ts-dur">1h 30m</span>
+              </div>
+              <div class="mock-ts-row mock-ts-row--anim3">
+                <span class="mock-ts-time">13:00–14:30</span>
+                <span class="mock-ts-task">📊 Raport tygodniowy</span>
+                <span class="mock-ts-dur">1h 30m</span>
+              </div>
+              <div class="mock-ts-row mock-ts-row--anim4">
+                <span class="mock-ts-time">14:30–16:00</span>
+                <span class="mock-ts-task">🤝 Meeting z klientem</span>
+                <span class="mock-ts-dur">1h 30m</span>
+              </div>
+            </div>
+            <div class="mock-ai-confirm">
+              <span class="mock-ai-msg">✨ AI wypełnił 4 wpisy automatycznie</span>
+              <button class="mock-btn-confirm">Zatwierdź wszystko</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </a>
+      <div class="anim-card__desc">
+        <strong>Automatyczne wypełnianie timesheet</strong> — AI obserwuje Twoją pracę i grupuje ją w zadania. Zero ręcznego wpisywania.
+      </div>
+    </div>
 
-    <a href="#" class="video-card reveal reveal-delay-1" data-yt="dQw4w9WgXcQ">
-      <div class="video-card__thumb">
-        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Browser Plugin — instalacja" loading="lazy">
-        <div class="video-card__play"><i class="fa-solid fa-play"></i></div>
+    <!-- ANIMACJA 2: Browser Plugin — one-click timer -->
+    <div class="anim-card reveal reveal-delay-1">
+      <div class="anim-card__label">
+        <i class="fa-solid fa-puzzle-piece"></i> One-Click Time Starter
       </div>
-      <div class="video-card__body">
-        <div class="video-card__label">Browser Plugin · 2 min</div>
-        <div class="video-card__title">Instalacja pluginu i pierwsze śledzenie czasu w Jirze</div>
+      <div class="anim-card__screen">
+        <div class="mock-browser">
+          <div class="mock-browser__bar">
+            <div class="mock-browser__url">
+              <i class="fa-solid fa-lock" style="color:#25cf60;font-size:10px;"></i>
+              jira.atlassian.com/browse/PROJ-142
+            </div>
+            <div class="mock-browser__ext">
+              <i class="fa-solid fa-puzzle-piece" style="color:#25cf60;"></i>
+            </div>
+          </div>
+          <div class="mock-browser__body">
+            <div class="mock-jira-header">
+              <span class="mock-jira-badge">PROJ-142</span>
+              <span class="mock-jira-title">Implementacja modułu płatności</span>
+            </div>
+            <div class="mock-jira-meta">
+              <span>Assignee: Dariusz C.</span>
+              <span>Status: In Progress</span>
+            </div>
+            <div class="mock-plugin-btn-wrap">
+              <button class="mock-plugin-btn mock-plugin-btn--idle">
+                <i class="fa-solid fa-play"></i> Start Timer
+              </button>
+              <div class="mock-plugin-btn mock-plugin-btn--active" style="display:none;">
+                <i class="fa-solid fa-circle" style="color:#ef4444;animation:pulse 1s infinite;"></i>
+                00:03:42 — PROJ-142
+              </div>
+            </div>
+            <div class="mock-plugin-tag">
+              <i class="fa-solid fa-tag"></i> Auto-tagged: Projekt Alpha
+            </div>
+          </div>
+        </div>
       </div>
-    </a>
+      <div class="anim-card__desc">
+        <strong>Jeden klik w Jirze</strong> — timer startuje, projekt się taguje, wpis trafia do TimeCamp. Bez zmiany zakładki.
+      </div>
+    </div>
 
-    <a href="#" class="video-card reveal reveal-delay-2" data-yt="dQw4w9WgXcQ">
-      <div class="video-card__thumb">
-        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Desktop Monitor — konfiguracja" loading="lazy">
-        <div class="video-card__play"><i class="fa-solid fa-play"></i></div>
+    <!-- ANIMACJA 3: Desktop Monitor — activity tracking -->
+    <div class="anim-card reveal reveal-delay-2">
+      <div class="anim-card__label">
+        <i class="fa-solid fa-desktop"></i> Smart Activity Monitor
       </div>
-      <div class="video-card__body">
-        <div class="video-card__label">Desktop Monitor · 4 min</div>
-        <div class="video-card__title">Smart Activity Monitor — konfiguracja i pierwsze raporty</div>
+      <div class="anim-card__screen">
+        <div class="mock-monitor">
+          <div class="mock-monitor__header">
+            <i class="fa-solid fa-desktop"></i> Aktywność dzisiaj
+            <span class="mock-monitor__live"><i class="fa-solid fa-circle" style="color:#ef4444;font-size:8px;"></i> LIVE</span>
+          </div>
+          <div class="mock-monitor__bars">
+            <div class="mock-bar-row">
+              <span class="mock-bar-app"><i class="fa-brands fa-chrome"></i> Chrome</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="--w:72%;--c:#3b82f6;"></div></div>
+              <span class="mock-bar-time">3h 12m</span>
+            </div>
+            <div class="mock-bar-row">
+              <span class="mock-bar-app"><i class="fa-solid fa-code"></i> VS Code</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="--w:55%;--c:#25cf60;"></div></div>
+              <span class="mock-bar-time">2h 27m</span>
+            </div>
+            <div class="mock-bar-row">
+              <span class="mock-bar-app"><i class="fa-brands fa-slack"></i> Slack</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="--w:28%;--c:#8b5cf6;"></div></div>
+              <span class="mock-bar-time">1h 15m</span>
+            </div>
+            <div class="mock-bar-row">
+              <span class="mock-bar-app"><i class="fa-solid fa-file-excel"></i> Excel</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="--w:18%;--c:#f59e0b;"></div></div>
+              <span class="mock-bar-time">0h 48m</span>
+            </div>
+          </div>
+          <div class="mock-monitor__suggest">
+            <i class="fa-solid fa-lightbulb" style="color:#f59e0b;"></i>
+            AI sugeruje: <strong>Dodaj wpis "Development" (2h 27m)?</strong>
+            <button class="mock-btn-yes">Tak ✓</button>
+          </div>
+        </div>
       </div>
-    </a>
+      <div class="anim-card__desc">
+        <strong>Monitor aktywności w tle</strong> — widzi co robisz, podpowiada wpisy. Koniec dnia = 30 sekund na zatwierdzenie.
+      </div>
+    </div>
 
   </div>
 </section>
