@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeCamp — Pobierz aplikacje i plugin</title>
+  <meta name="description" content="Pracuj 100x szybciej z TimeCamp AI Agent, browser pluginem i desktop monitorem. Pobierz teraz i zapomnij o ręcznym wpisywaniu czasu.">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/apps.css">
+</head>
+<body>
+
+<!-- ============================================================
+     PRODUCT BAR (symulacja paska produktu TimeCamp)
+     ============================================================ -->
+<nav class="product-bar">
+  <a href="https://www.timecamp.com" class="product-bar__logo" target="_blank">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="32" height="32" rx="8" fill="#25cf60"/>
+      <path d="M16 7C11.03 7 7 11.03 7 16s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 2a7 7 0 110 14A7 7 0 0116 9zm-.5 2v5.25l4.25 2.5-.75 1.25-5-3V11h1.5z" fill="white"/>
+    </svg>
+    <span>TimeCamp</span>
+  </a>
+
+  <div class="product-bar__nav">
+    <button class="dl-trigger" aria-label="Pobierz aplikacje TimeCamp">
+      <i class="fa-solid fa-circle-arrow-down"></i>
+      Pobierz aplikacje
+      <div class="dl-tooltip">
+        <strong>🚀 Odbierz moc AI!</strong>
+        Zainstaluj aplikację, która wypełni timesheet za Ciebie — automatycznie, inteligentnie, w 100% prywatnie.
+      </div>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="top">
+  <div class="hero__bg-blob hero__bg-blob--1"></div>
+  <div class="hero__bg-blob hero__bg-blob--2"></div>
+
+  <div class="hero__eyebrow">
+    <i class="fa-solid fa-bolt"></i>
+    Nowe narzędzia TimeCamp — pracuj mądrzej, nie ciężej
+  </div>
+
+  <h1>Zapomnij o ręcznym<br><span>wpisywaniu czasu</span></h1>
+
+  <p class="hero__sub">
+    Twój AI Agent, browser plugin i desktop monitor — trzy narzędzia, które razem
+    robią za Ciebie to, co zajmowało Ci godziny tygodniowo.
+  </p>
+
+  <div class="hero__cta-group">
+    <a href="#products" class="btn btn--primary btn--lg">
+      <i class="fa-solid fa-robot"></i> Pobierz AI Agenta
+    </a>
+    <a href="#download-table" class="btn btn--outline btn--lg">
+      <i class="fa-solid fa-download"></i> Wszystkie wersje
+    </a>
+  </div>
+
+  <div class="hero__image">
+    <img
+      src="https://cdn-y.timecamp.com/img/applications/main/top/desktop.png"
+      alt="TimeCamp aplikacje — widok desktop"
+      loading="eager"
+      onerror="this.style.display='none'"
+    >
+  </div>
+
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <strong><span data-count="500" data-suffix="K+">500K+</span></strong>
+      <span>użytkowników na świecie</span>
+    </div>
+    <div class="hero__stat">
+      <strong><span data-count="100" data-suffix="x">100x</span></strong>
+      <span>szybsze wypełnianie timesheet</span>
+    </div>
+    <div class="hero__stat">
+      <strong><span data-count="4" data-suffix=".8★">4.8★</span></strong>
+      <span>średnia ocena w sklepach</span>
+    </div>
+    <div class="hero__stat">
+      <strong><span data-count="0" data-suffix=" PLN">0 PLN</span></strong>
+      <span>koszt instalacji</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PRODUCT CARDS
+     ============================================================ -->
+<section class="section" id="products">
+  <div class="section__header reveal">
+    <span class="eyebrow">Wybierz swoje narzędzie</span>
+    <h2>Trzy sposoby na TimeCamp.<br>Jeden cel: zero ręcznej roboty.</h2>
+    <p>Każde narzędzie działa samodzielnie. Razem tworzą ekosystem, który zarządza Twoim czasem za Ciebie.</p>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- KARTA 1: AI Agent -->
+    <div class="product-card product-card--featured reveal">
+      <span class="product-card__badge">⭐ Najpotężniejsze</span>
+      <div class="product-card__icon">
+        <i class="fa-solid fa-robot"></i>
+      </div>
+      <h2>TimeTracker AI Agent</h2>
+      <p class="product-card__tagline">Twój prywatny asystent AI — pracuje wyłącznie dla Ciebie</p>
+      <p>
+        Zapomnij o timesheet. AI Agent obserwuje Twoją pracę, grupuje aktywności w zadania
+        i wypełnia raporty automatycznie. Masz też własnego agenta AI, który zrobi co zechcesz —
+        notatki, podsumowania, analizy. Wszystko lokalnie, bez wysyłania danych na zewnątrz.
+      </p>
+      <ul class="product-card__features">
+        <li><i class="fa-solid fa-check-circle"></i> Automatyczne wypełnianie timesheet</li>
+        <li><i class="fa-solid fa-check-circle"></i> Widoki: graficzny, lista, tabela, tygodniowy</li>
+        <li><i class="fa-solid fa-check-circle"></i> Podpowiedzi zadań na podstawie Twojej historii</li>
+        <li><i class="fa-solid fa-check-circle"></i> Prywatny agent AI — robi co zechcesz</li>
+        <li><i class="fa-solid fa-check-circle"></i> 100% Privacy First — dane zostają u Ciebie</li>
+      </ul>
+      <div class="product-card__cta">
+        <a href="https://download.timecamp.com/desktop/latest/windows" class="btn btn--primary" style="width:100%;justify-content:center;">
+          <i class="fa-solid fa-download"></i> Pobierz AI Agenta — za darmo
+        </a>
+        <div class="product-card__privacy">
+          <i class="fa-solid fa-shield-halved"></i>
+          100% Privacy First — Twoje dane nigdy nie opuszczają Twojego komputera
+        </div>
+      </div>
+    </div>
+
+    <!-- KARTA 2: Browser Plugin -->
+    <div class="product-card reveal reveal-delay-1">
+      <div class="product-card__icon">
+        <i class="fa-solid fa-puzzle-piece"></i>
+      </div>
+      <h2>One-Click Time Starter</h2>
+      <p class="product-card__tagline">Śledź czas tam, gdzie pracujesz — bez zmiany zakładki</p>
+      <p>
+        Pracujesz w Jirze, Trello, Asanie, GitHubie? Plugin dodaje przycisk "Start" bezpośrednio
+        do Twoich narzędzi. Kliknij raz — timer startuje, projekt się taguje, wpis trafia do TimeCamp.
+        Koniec z przełączaniem kart.
+      </p>
+      <ul class="product-card__features">
+        <li><i class="fa-solid fa-check-circle"></i> Integracje z Jira, Trello, Asana, GitHub i 30+ innymi</li>
+        <li><i class="fa-solid fa-check-circle"></i> Automatyczne tagowanie projektów</li>
+        <li><i class="fa-solid fa-check-circle"></i> Timer startuje jednym kliknięciem</li>
+        <li><i class="fa-solid fa-check-circle"></i> Działa w Chrome, Edge i Firefox</li>
+        <li><i class="fa-solid fa-check-circle"></i> Podpowiedzi wpisów na podstawie URL</li>
+      </ul>
+      <div class="product-card__cta">
+        <a href="https://chrome.google.com/webstore/detail/timecamp-time-tracker/ohbkdjmhoegleofcohdjagmcnkimfdaa" target="_blank" class="btn btn--navy" style="width:100%;justify-content:center;">
+          <i class="fa-brands fa-chrome"></i> Dodaj do przeglądarki
+        </a>
+      </div>
+    </div>
+
+    <!-- KARTA 3: Desktop Monitor -->
+    <div class="product-card reveal reveal-delay-2">
+      <div class="product-card__icon">
+        <i class="fa-solid fa-desktop"></i>
+      </div>
+      <h2>Smart Activity Monitor</h2>
+      <p class="product-card__tagline">Komputer wie co robiłeś — niech Ci o tym powie</p>
+      <p>
+        Aplikacja działa w tle i rejestruje, w jakich programach i stronach spędzasz czas.
+        Na koniec dnia dostajesz gotowe podpowiedzi do timesheet — wystarczy zatwierdzić.
+        Twój szef widzi raporty, Ty masz spokój.
+      </p>
+      <ul class="product-card__features">
+        <li><i class="fa-solid fa-check-circle"></i> Monitoring aplikacji i stron w tle</li>
+        <li><i class="fa-solid fa-check-circle"></i> Automatyczne podpowiedzi do timesheet</li>
+        <li><i class="fa-solid fa-check-circle"></i> Raporty aktywności dla managera</li>
+        <li><i class="fa-solid fa-check-circle"></i> Działa na Windows i macOS</li>
+        <li><i class="fa-solid fa-check-circle"></i> Lekki — nie spowalnia komputera</li>
+      </ul>
+      <div class="product-card__cta">
+        <a href="https://app.timecamp.com/download/stable/windows" class="btn btn--outline" style="width:100%;justify-content:center;">
+          <i class="fa-solid fa-desktop"></i> Pobierz Desktop Monitor
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     DLACZEGO WARTO (Benefits)
+     ============================================================ -->
+<section class="section section--gray" id="why">
+  <div class="section__header reveal">
+    <span class="eyebrow">Dlaczego warto?</span>
+    <h2>Po co mi to? Bo czas to pieniądz.<br>A Twój czas jest bezcenny.</h2>
+    <p>Każde z narzędzi rozwiązuje konkretny problem, który masz każdego dnia.</p>
+  </div>
+
+  <div class="benefits-grid">
+    <div class="benefit-item reveal">
+      <div class="benefit-item__icon">
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+      <h3>100x szybciej</h3>
+      <p>Zamiast 30 minut na wypełnienie timesheet — 30 sekund na zatwierdzenie podpowiedzi AI. Serio.</p>
+    </div>
+
+    <div class="benefit-item reveal reveal-delay-1">
+      <div class="benefit-item__icon">
+        <i class="fa-solid fa-shield-halved"></i>
+      </div>
+      <h3>Twoje zasady, Twoje dane</h3>
+      <p>AI Agent działa lokalnie. Żadne dane o Twojej pracy nie trafiają na zewnętrzne serwery. 100% Privacy First.</p>
+    </div>
+
+    <div class="benefit-item reveal reveal-delay-2">
+      <div class="benefit-item__icon">
+        <i class="fa-solid fa-brain"></i>
+      </div>
+      <h3>Prywatny agent AI</h3>
+      <p>Masz własnego asystenta AI, który zna Twój kontekst pracy. Notatki, podsumowania, analizy — na żądanie.</p>
+    </div>
+
+    <div class="benefit-item reveal reveal-delay-3">
+      <div class="benefit-item__icon">
+        <i class="fa-solid fa-plug"></i>
+      </div>
+      <h3>Działa tam, gdzie Ty</h3>
+      <p>Jira, Trello, Asana, GitHub, Notion — plugin integruje się z ponad 30 narzędziami, których już używasz.</p>
+    </div>
+
+    <div class="benefit-item reveal reveal-delay-1">
+      <div class="benefit-item__icon">
+        <i class="fa-solid fa-chart-line"></i>
+      </div>
+      <h3>Piękniejsze widoki</h3>
+      <p>Graficzny, lista, tabela, tygodniowy — wybierz widok, który pasuje do Twojego stylu pracy.</p>
+    </div>
+
+    <div class="benefit-item reveal reveal-delay-2">
+      <div class="benefit-item__icon">
+        <i class="fa-solid fa-face-smile"></i>
+      </div>
+      <h3>Instalacja w 2 minuty</h3>
+      <p>Pobierz, zainstaluj, zaloguj się. Gotowe. Żadnej konfiguracji, żadnych skomplikowanych ustawień.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     DOWNLOAD TABLE
+     ============================================================ -->
+<section class="section" id="download-table">
+  <div class="section__header reveal">
+    <span class="eyebrow">Pobierz teraz</span>
+    <h2>Wszystkie wersje — wybierz swoją</h2>
+    <p>Dostępne na Windows, macOS, Linux i jako rozszerzenie przeglądarki. Zawsze za darmo.</p>
+  </div>
+
+  <div class="download-tabs reveal">
+    <button class="tab-btn active" data-filter="all">
+      <i class="fa-solid fa-layer-group"></i> Wszystkie
+    </button>
+    <button class="tab-btn" data-filter="windows">
+      <i class="fa-brands fa-windows"></i> Windows
+    </button>
+    <button class="tab-btn" data-filter="mac">
+      <i class="fa-brands fa-apple"></i> macOS
+    </button>
+    <button class="tab-btn" data-filter="linux">
+      <i class="fa-brands fa-linux"></i> Linux
+    </button>
+    <button class="tab-btn" data-filter="browser">
+      <i class="fa-brands fa-chrome"></i> Browser
+    </button>
+  </div>
+
+  <div class="download-table-wrap reveal">
+    <table>
+      <thead>
+        <tr>
+          <th>System / Platforma</th>
+          <th>Wersja / Opis</th>
+          <th>Pobierz</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- AI Agent / Desktop App — Windows -->
+        <tr data-product="windows">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-windows.svg" alt="Windows" onerror="this.outerHTML='<i class=\'fa-brands fa-windows\'></i>'">
+              Windows
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">AI Agent</span> Windows 10/11 (.exe)
+          </td>
+          <td>
+            <a href="https://download.timecamp.com/desktop/latest/windows" class="btn btn--primary btn--sm" target="_blank">
+              <i class="fa-solid fa-download"></i> Pobierz
+            </a>
+          </td>
+        </tr>
+
+        <!-- Desktop Monitor — Windows -->
+        <tr data-product="windows">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-windows.svg" alt="Windows" onerror="this.outerHTML='<i class=\'fa-brands fa-windows\'></i>'">
+              Windows
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">Desktop Monitor</span> Windows 10/11 (.exe)
+          </td>
+          <td>
+            <a href="https://app.timecamp.com/download/stable/windows" class="btn btn--outline btn--sm" target="_blank">
+              <i class="fa-solid fa-download"></i> Pobierz
+            </a>
+          </td>
+        </tr>
+
+        <!-- AI Agent — macOS Apple Silicon -->
+        <tr data-product="mac">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-apple.svg" alt="macOS" onerror="this.outerHTML='<i class=\'fa-brands fa-apple\'></i>'">
+              macOS
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">AI Agent</span> Apple Silicon (M1, M2, M3, M4)
+          </td>
+          <td>
+            <a href="https://download.timecamp.com/desktop/latest/macos" class="btn btn--primary btn--sm" target="_blank">
+              <i class="fa-solid fa-download"></i> Pobierz
+            </a>
+          </td>
+        </tr>
+
+        <!-- Desktop Monitor — macOS -->
+        <tr data-product="mac">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-apple.svg" alt="macOS" onerror="this.outerHTML='<i class=\'fa-brands fa-apple\'></i>'">
+              macOS
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">Desktop Monitor</span> Intel + Apple Silicon
+          </td>
+          <td>
+            <a href="https://app.timecamp.com/download/stable/macos" class="btn btn--outline btn--sm" target="_blank">
+              <i class="fa-solid fa-download"></i> Pobierz
+            </a>
+          </td>
+        </tr>
+
+        <!-- Linux -->
+        <tr data-product="linux">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-linux.svg" alt="Linux" onerror="this.outerHTML='<i class=\'fa-brands fa-linux\'></i>'">
+              Linux
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">Desktop Monitor</span> AppImage / .deb / .rpm
+          </td>
+          <td>
+            <a href="https://docs.timecamp.com/download-timecamp#linux" class="btn btn--outline btn--sm" target="_blank">
+              <i class="fa-solid fa-download"></i> Pobierz
+            </a>
+          </td>
+        </tr>
+
+        <!-- Chrome -->
+        <tr data-product="browser">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-chrome.svg" alt="Chrome" onerror="this.outerHTML='<i class=\'fa-brands fa-chrome\'></i>'">
+              Chrome / Chromium
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">Browser Plugin</span> Chrome Web Store
+          </td>
+          <td>
+            <a href="https://chrome.google.com/webstore/detail/timecamp-time-tracker/ohbkdjmhoegleofcohdjagmcnkimfdaa" class="btn btn--primary btn--sm" target="_blank">
+              <i class="fa-solid fa-puzzle-piece"></i> Zainstaluj
+            </a>
+          </td>
+        </tr>
+
+        <!-- Edge -->
+        <tr data-product="browser">
+          <td>
+            <div class="td-os">
+              <img src="assets/img/icon-edge.svg" alt="Edge" onerror="this.outerHTML='<i class=\'fa-brands fa-edge\'></i>'">
+              Microsoft Edge
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">Browser Plugin</span> Microsoft Edge Add-ons
+          </td>
+          <td>
+            <a href="https://microsoftedge.microsoft.com/addons/detail/timecamp/oipghnhfamneifpnkiefiikfklofhjcp" class="btn btn--outline btn--sm" target="_blank">
+              <i class="fa-solid fa-puzzle-piece"></i> Zainstaluj
+            </a>
+          </td>
+        </tr>
+
+        <!-- Firefox -->
+        <tr data-product="browser">
+          <td>
+            <div class="td-os">
+              <i class="fa-brands fa-firefox-browser" style="font-size:22px;color:#FF7139;"></i>
+              &nbsp; Firefox
+            </div>
+          </td>
+          <td>
+            <span class="td-badge">Browser Plugin</span> Firefox Add-ons
+          </td>
+          <td>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/timecamp/" class="btn btn--outline btn--sm" target="_blank">
+              <i class="fa-solid fa-puzzle-piece"></i> Zainstaluj
+            </a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     VIDEO SECTION
+     ============================================================ -->
+<section class="section section--gray" id="videos">
+  <div class="section__header reveal">
+    <span class="eyebrow">Zobacz w akcji</span>
+    <h2>Obejrzyj, zanim pobierzesz</h2>
+    <p>Krótkie filmy pokazujące, jak działa każde narzędzie. Instalacja i pierwsze kroki w mniej niż 5 minut.</p>
+  </div>
+
+  <div class="video-grid">
+
+    <a href="#" class="video-card reveal" data-yt="dQw4w9WgXcQ">
+      <div class="video-card__thumb">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="TimeCamp AI Agent — jak działa" loading="lazy">
+        <div class="video-card__play"><i class="fa-solid fa-play"></i></div>
+      </div>
+      <div class="video-card__body">
+        <div class="video-card__label">AI Agent · 3 min</div>
+        <div class="video-card__title">Jak AI Agent wypełnia timesheet za Ciebie</div>
+      </div>
+    </a>
+
+    <a href="#" class="video-card reveal reveal-delay-1" data-yt="dQw4w9WgXcQ">
+      <div class="video-card__thumb">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Browser Plugin — instalacja" loading="lazy">
+        <div class="video-card__play"><i class="fa-solid fa-play"></i></div>
+      </div>
+      <div class="video-card__body">
+        <div class="video-card__label">Browser Plugin · 2 min</div>
+        <div class="video-card__title">Instalacja pluginu i pierwsze śledzenie czasu w Jirze</div>
+      </div>
+    </a>
+
+    <a href="#" class="video-card reveal reveal-delay-2" data-yt="dQw4w9WgXcQ">
+      <div class="video-card__thumb">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Desktop Monitor — konfiguracja" loading="lazy">
+        <div class="video-card__play"><i class="fa-solid fa-play"></i></div>
+      </div>
+      <div class="video-card__body">
+        <div class="video-card__label">Desktop Monitor · 4 min</div>
+        <div class="video-card__title">Smart Activity Monitor — konfiguracja i pierwsze raporty</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     INSTALL STEPS
+     ============================================================ -->
+<section class="section" id="install">
+  <div class="section__header reveal">
+    <span class="eyebrow">Instalacja</span>
+    <h2>Prosta, łatwa i przyjemna 😊</h2>
+    <p>Trzy kroki i gotowe. Bez IT, bez konfiguracji, bez bólu głowy.</p>
+  </div>
+
+  <div class="steps-grid">
+    <div class="step-item reveal">
+      <div class="step-item__num">1</div>
+      <h3>Pobierz</h3>
+      <p>Kliknij przycisk pobierania dla swojego systemu. Plik waży mniej niż 50 MB.</p>
+    </div>
+    <div class="step-item reveal reveal-delay-1">
+      <div class="step-item__num">2</div>
+      <h3>Zainstaluj</h3>
+      <p>Uruchom instalator i kliknij "Dalej" kilka razy. Dosłownie tyle.</p>
+    </div>
+    <div class="step-item reveal reveal-delay-2">
+      <div class="step-item__num">3</div>
+      <h3>Zaloguj się</h3>
+      <p>Użyj swojego konta TimeCamp. AI zaczyna działać od razu — bez konfiguracji.</p>
+    </div>
+    <div class="step-item reveal reveal-delay-3">
+      <div class="step-item__num">🎉</div>
+      <h3>Gotowe!</h3>
+      <p>Timesheet wypełnia się sam. Ty możesz skupić się na pracy, która naprawdę ma znaczenie.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER CTA
+     ============================================================ -->
+<section class="footer-cta">
+  <h2>Gotowy na 100x szybszy timesheet?</h2>
+  <p>
+    Dołącz do ponad 500 000 użytkowników, którzy przestali tracić czas na ręczne wpisywanie.
+    Pobierz teraz — za darmo, bez karty kredytowej.
+  </p>
+  <div class="footer-cta__btns">
+    <a href="https://download.timecamp.com/desktop/latest/windows" class="btn btn--primary btn--lg" target="_blank">
+      <i class="fa-solid fa-robot"></i> Pobierz AI Agenta
+    </a>
+    <a href="https://chrome.google.com/webstore/detail/timecamp-time-tracker/ohbkdjmhoegleofcohdjagmcnkimfdaa" class="btn btn--outline btn--lg" target="_blank" style="border-color:rgba(255,255,255,.4);color:#fff;">
+      <i class="fa-brands fa-chrome"></i> Dodaj plugin do Chrome
+    </a>
+    <a href="https://app.timecamp.com/download/stable/windows" class="btn btn--outline btn--lg" target="_blank" style="border-color:rgba(255,255,255,.4);color:#fff;">
+      <i class="fa-solid fa-desktop"></i> Pobierz Desktop Monitor
+    </a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <p>
+    &copy; 2025 <a href="https://www.timecamp.com" target="_blank">TimeCamp</a> — All rights reserved.
+    &nbsp;|&nbsp;
+    <a href="https://www.timecamp.com/privacy-policy/" target="_blank">Polityka prywatności</a>
+    &nbsp;|&nbsp;
+    <a href="https://www.timecamp.com/terms-of-service/" target="_blank">Regulamin</a>
+    &nbsp;|&nbsp;
+    <a href="https://support.timecamp.com" target="_blank">Pomoc</a>
+  </p>
+</footer>
+
+
+<script src="assets/js/apps.js"></script>
+</body>
+</html>
